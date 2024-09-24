@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Piter (castle+)>
+<!ELEMENT castle (id, insignia)>
+<!ATTLIST castle
+          name CDATA #REQUIRED>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT insignia (sign+)>
+<!ELEMENT sign ((image) | (info))>
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+          src CDATA #REQUIRED>
+<!ELEMENT info (#PCDATA)>
